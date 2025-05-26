@@ -1,6 +1,17 @@
 def all_thing_is_obj(object: any) -> int:
 	typeof = type(object)
-	print(f"{typeof}")
+	if typeof == int:
+		print("Type not found")
+	elif typeof == str and (object == "Brian" or object == "Toto"):
+		print(f"{object} is in the kitchen : {typeof}")
+	elif typeof == list:
+		print(f"List : {typeof}")
+	elif typeof == set:
+		print(f"Set : {typeof}")
+	elif typeof == dict:
+		print(f"Dict : {typeof}")
+	elif typeof == tuple:
+		print(f"Tuple : {typeof}")	
 	return 42
 
 ft_list = ["Hello", "tata!"]
